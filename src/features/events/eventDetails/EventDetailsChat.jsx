@@ -1,5 +1,11 @@
 import React from 'react';
-import { Segment, Comment, Form, Button,Header} from 'semantic-ui-react';
+import {
+  Segment,
+  Comment,
+  Form,
+  Button,
+  Header,
+} from 'semantic-ui-react';
 
 function eventDetailChat() {
   return (

@@ -1,16 +1,11 @@
 import React from 'react';
 import EventListItem from './EventListItem';
 
-function EventsList({ events, selectEvent, deleteEvent }) {
+function EventsList({ events }) {
   return (
     <>
-      {events.map((item) => (
-        <EventListItem
-          key={item.id}
-          event={item}
-          selectEvent={selectEvent}
-          deleteEvent={deleteEvent}
-        />
+      {events.map((event) => (
+        <EventListItem key={event.id} event={event} />
       ))}
     </>
   );

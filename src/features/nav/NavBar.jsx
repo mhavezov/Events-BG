@@ -21,6 +21,7 @@ function NavBar({ setFormOpen }) {
           <Image src='/assets/logo.png' alt='logo' size='mini' />
         </Menu.Item>
         <Menu.Item as={NavLink} to='/events' name='Events BG' />
+        <Menu.Item as={NavLink} to='/sandbox' name='sandbox' />
         {authenticated && (
           <Menu.Item as={NavLink} to='/createEvent'>
             <Button positive inverted content='Create Event' />
