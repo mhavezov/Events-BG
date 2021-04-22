@@ -8,12 +8,14 @@ import NavBar from '../../features/nav/NavBar';
 import EventDetailsPage from '../../features/events/eventDetails/EventDetailsPage';
 import EventForm from '../../features/events/eventForm/EventForm';
 import Sandbox from '../../features/Sandbox/Sandbox';
+import ModalManager from '../common/modal/ModalManager';
 
 function App() {
-const {key} = useLocation()
+  const { key } = useLocation();
 
   return (
     <>
+      <ModalManager />
       <Route exact path='/' component={HomePage} />
       <Route
         path={'/(.+)'}
@@ -33,7 +35,8 @@ const {key} = useLocation()
               />
               <Route
                 path={['/createEvent', '/manage/:id']}
-                component={EventForm} key={key}
+                component={EventForm}
+                key={key}
               />
             </Container>
           </>
